@@ -1,0 +1,265 @@
+/*#######Defaults#########*/
+nav,header,footer{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin: 0;
+    
+}
+
+label
+{
+    font-size: 35px;
+    font-weight: 600;   
+}
+p{
+    font-size: 20px;
+    line-height: 1; 
+}
+article p{
+    font-size: 35px;
+    text-align: center;
+    
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    
+    content: "";
+}
+.col-1{ width: 8.33%;}
+.col-2{ width: 16.66%;}
+.col-3{ width: 25%;}
+.col-4{ width: 33.33%;}
+.col-5{ width: 41.66%;}
+.col-6{ width: 50%;}
+.col-7{ width: 58.33%;}
+.col-8{ width: 66.66%;}
+.col-9{ width: 75%;}
+.col-10{ width: 83.33%;}
+.col-11{ width: 91.66%;}
+.col-12{ width: 100%;}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+/*#######Nav bar#########*/
+nav{
+    width: 100%;
+    margin: 0;
+}
+nav ul
+{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ul.topnavleft li{
+list-style: none;
+    float: left;
+        
+}
+
+ul.topnavleft li.topnavright{
+    float:right;
+}
+ul.topnavleft li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+ul.topnavleft li a:hover{
+    background-color: #0000ff;
+    color: #fff;
+}
+ul.topnavleft li.ddicon{
+    display: none;
+    
+}
+
+
+/*#########custom styles############*/
+#section-1-gradient{
+    background: blue;
+    background: -webkit-linear-gradient(blue,#65a5ff)
+}
+
+div.box{
+    background-color: white;
+    text-align: center;
+    margin: 24px;
+    padding:36px 24px 40px 24px;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),0 20px 30px 0 rgba(0,0,0,.1);
+   
+}
+div.bottomicon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15), 4px 4px 10px 5px rgba(0,0,0,.1);
+    
+}
+button
+{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    background-color: blue;
+    padding: 15px 60px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    
+}
+button.button{
+    display: block;
+    margin: auto;
+    
+}
+div.icon{
+    width: 100%;
+}
+
+h1.large{
+    color: black;
+    font-size: 26px;
+    margin: 0;
+    line-height: 2;
+}
+
+div.leftside-col{
+    margin-left: 30%;
+
+}
+div.rightside-col{
+    margin-right: 30%;
+}
+form h2{
+    color: white;
+    
+}
+input[type="text"]{
+    font-size: 20px;
+    width:400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+h1.middle-header{
+    font-size: 60px;
+    text-align: center;
+    color: black;       
+}
+
+footer.footer-style{
+    background-color: grey;
+    /*margin-left: 10%;*/
+    padding-left: 10%;
+}
+footer.footer-style h1{
+    color: white;
+    font-size: 30px;
+}
+footer.footer-style ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+   
+}
+footer.footer-style li a{
+     text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/*##########Mobile###############*/
+@media screen and (max-width: 680px){
+    ul.topnavleft li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnavleft li.ddicon{
+        display: block;
+        float: right;
+        
+    }
+    ul.topnavleft.responsive li.ddicon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnavleft.responsive{
+        position: relative;
+        
+    }
+    ul.topnavleft.responsive li{
+        display: inline;
+        float: none;
+            
+    }
+    ul.topnavleft.responsive li a{
+        display: block;
+        text-align: left;
+    }
+        
+        .col-6,.col-4,col-7,col-5{
+            width:100%;
+            margin: 0;
+        }
+    
+    div.mobilestack{
+        width: 50%;
+        display: block;
+        
+    }
+
+    div.box{
+        padding: 5px;
+        display: block;
+    }
+    div.bottomicon img{
+        width: 100%;
+               
+    }
+    .bottomicon{
+        margin: 10px;
+    }
+    div.leftside-col,div.rightside-col{
+        margin: 15px;
+        
+    }
+    input[type="text"]{
+        width:300px;
+        
+        
+    }
+    .video-container iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        
+    }
+}
